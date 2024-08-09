@@ -1,6 +1,8 @@
 # React-Proyects
 
-Repositorio realizando proyecto por proyecto
+Repositorio realizando proyecto por proyecto  
+
+<img width="100%" src="https://ckl-website-static.s3.amazonaws.com/wp-content/uploads/2017/07/Banner_css.png">
 
 ### Proyectos
 - Lista de Tareas: Crea una aplicación simple para gestionar tareas pendientes.
