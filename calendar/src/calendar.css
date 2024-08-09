@@ -43,3 +43,8 @@ td:hover {
     color: white;
     cursor: pointer;
 }
+
+.selected {
+    background-color: black;
+    color: white;
+}

@@ -23,6 +23,7 @@ export default function Calendar() {
     const [mes, setMes] = useState(new Date().getMonth());
 
     function nextMonth() {
+      //Cambio de Estado
         if (mes === 11) {
             setMes(0);
         } else {
@@ -52,6 +53,14 @@ export default function Calendar() {
           for (let j = 0; j < 7; j++) {
             let td = document.createElement('td');
             td.textContent = j + 1 + i * 7;
+            td.onclick = () => {
+              if(td.classList.contains('selected')){
+                td.classList.remove('selected');
+              }
+              else{
+                td.classList.add('selected');
+              }
+            }
             tr.appendChild(td);
             tbody.appendChild(tr);
           }
@@ -80,7 +89,9 @@ export default function Calendar() {
                             <th>Saturday</th>
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody>
+                      
+                    </tbody>
                 </table>
             </main>
         </div>
