@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+
+  function add() {
+      const task = document.createElement('li');
+      task.innerHTML = `
+        <span>${document.querySelector('header input').value}</span>
+        <button>Delete</button>
+      `;
+      const button = task.querySelector('button');
+      button.addEventListener('click', function(e) {
+        e.target.parentElement.remove();
+      });
+      document.querySelector('main ul').appendChild(task);
+      document.querySelector('header input').value = '';
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>My To-Do List</h1>
+        <div>
+          <input type="text" placeholder="Enter a task" />
+          <button onClick={add} type="submit">+</button>
+        </div>
       </header>
+      <main>
+        <ul>
+
+        </ul>
+      </main>
     </div>
   );
+
+
 }
 
 export default App;
