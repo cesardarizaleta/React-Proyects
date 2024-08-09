@@ -7,13 +7,12 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #252525;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 h1 {
-  color: #fff;
   font-size: 3rem;
 }
 
@@ -26,6 +25,7 @@ header {
 header div {
   display: flex;
   transition: all 0.3s;
+  box-shadow: #cccccc 0px 0px 5px;
 }
 
 header div input {
@@ -60,17 +60,44 @@ main {
   height: 70vh;
   overflow: auto;
   box-sizing: border-box;
-  background-color: red;
 }
 
-ul {
+main ul {
   list-style: none;
   box-sizing: border-box;
-  background-color: blue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-li {
-  background-color: white;
+main li {
+  box-sizing: border-box;
   color: black;
+  display: flex;
+  box-shadow: #cccccc 0px 0px 5px;
+  border-radius: 5px;
+}
+
+main li span {
+  background-color: white;
   padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+main li button {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+main li button:hover {
+  width: 40%;
 }

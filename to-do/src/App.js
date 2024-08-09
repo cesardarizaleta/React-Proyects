@@ -4,6 +4,9 @@ import './App.css';
 function App() {
 
   function add() {
+      if(document.querySelector('header input').value === '') {
+        return;
+      }
       const task = document.createElement('li');
       task.innerHTML = `
         <span>${document.querySelector('header input').value}</span>
