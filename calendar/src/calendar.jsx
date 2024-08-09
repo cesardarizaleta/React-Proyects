@@ -23,10 +23,25 @@ export default function Calendar() {
     const [mes, setMes] = useState(new Date().getMonth());
 
     function nextMonth() {
-      //Cambio de Estado
         if (mes === 11) {
+            let body = document.querySelector('tbody')
+            if(body.length === 5){
+              body.remove(body.lastChild);
+            }
+            else {
+              let tr = document.createElement('tr');
+              for (let j = 0; j < 2; j++) {
+                let td = document.createElement('td');
+                td.textContent = 29 + j;
+                tr.appendChild(td);
+                body.appendChild(tr);
+              }
+            }
+            //Regresar a Enero
             setMes(0);
         } else {
+            
+            //Cambiar al siguiente mes
             setMes(mes + 1);
         }
     }
