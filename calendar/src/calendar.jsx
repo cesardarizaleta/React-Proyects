@@ -20,11 +20,8 @@ export default function Calendar() {
         11: 31
     };
 
-    const [mes, setMes] = useState(meses[0]);
-
-    const cambio = () => {
-        //mes = meses[0] + 1;
-    }
+    var actual = meses[new Date().getMonth()]
+    //Cambiar respecto a la lista
 
     const [tbody, setTbody] = useState(null);
 
@@ -52,8 +49,8 @@ export default function Calendar() {
         <div className='calendario'>
             <nav>
                 <button>Previous</button>
-                <h2>{setMes}</h2>
-                <button onClick={cambio}>Next</button>
+                <h2>{actual}</h2>
+                <button>Next</button>
             </nav>
             <main>
                 <table>
