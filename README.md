@@ -2,6 +2,8 @@
 
 <img width="100%" src="https://ckl-website-static.s3.amazonaws.com/wp-content/uploads/2017/07/Banner_css.png">
 
+
+## ES 
 Repositorio realizando proyecto por proyecto utilizando la libreria React, todos los proyectos estan en sus respectivas carpetas
 
 ### Proyectos
@@ -30,3 +32,34 @@ Repositorio realizando proyecto por proyecto utilizando la libreria React, todos
 - Blog de Viajes: Desarrolla un blog de viajes con fotos, descripciones y ubicaciones de destinos.
 - Juego de Ahorcado: Crea el clásico juego de adivinar palabras.
 - Aplicación de Recordatorios: Diseña una aplicación que permita a los usuarios configurar y recibir recordatorios.
+
+## EN
+Repository organizing projects individually using the React library. All projects are in their respective folders.
+
+### Projects
+- To-Do List: Create a simple application to manage pending tasks.
+- Calendar: Develop an interactive calendar with events and reminders.
+- Image Gallery: Build an image gallery with thumbnail views and full-screen image display.
+- Personal Blog: Create a personal blog with functionality to create, read, and edit posts.
+- World Clock: Design a world clock that displays the current time in different cities around the world.
+- Calculator: Develop a basic calculator that performs simple mathematical operations.
+- Shopping List: Build a shopping list that allows adding and removing items.
+- Real-time Chat: Implement a real-time chat using Firebase or Socket.io.
+- Music Player: Create a music player that plays audio tracks and allows navigation.
+- Interactive Map: Use a mapping API to display locations and points of interest on an interactive map.
+- Currency Converter: Develop a tool to convert between different currencies.
+- Authentication System: Implement a user authentication system with login and registration.
+- Personal Portfolio: Create a portfolio website to showcase your projects and skills.
+- Online Store: Build an online store with a product catalog and shopping cart.
+- Video Playlist: Develop a video playlist with play and pause functionalities.
+- Weather Widget: Use a weather forecast API to display current weather information.
+- Memory Game: Create a memory game where users must match pairs of cards.
+- Online Survey: Design an interactive survey with questions and answers.
+- Password Generator: Develop a tool that generates strong passwords.
+- News Application: Build an application that displays news from RSS feeds or a news API.
+- Drawing Tool: Create an online drawing tool that allows users to create digital art.
+- Word Counter: Implement a word counter that analyzes and displays statistics of an entered text.
+- Travel Blog: Develop a travel blog with photos, descriptions, and locations of destinations.
+- Hangman Game: Create the classic word guessing game.
+- Reminder App: Design an application that allows users to set and receive reminders.
+- Note: This translation aims to provide a clear and concise representation of the original Spanish text. The choice of words and sentence structure in the English translation may vary slightly to better convey the intended meaning.
