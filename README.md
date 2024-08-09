@@ -37,7 +37,7 @@ Repositorio realizando proyecto por proyecto utilizando la libreria React, todos
 Repository organizing projects individually using the React library. All projects are in their respective folders.
 
 ### Projects
-- To-Do List: Create a simple application to manage pending tasks.
+- To-Do List: Create a simple application to manage pending tasks. ✅
 - Calendar: Develop an interactive calendar with events and reminders.
 - Image Gallery: Build an image gallery with thumbnail views and full-screen image display.
 - Personal Blog: Create a personal blog with functionality to create, read, and edit posts.
