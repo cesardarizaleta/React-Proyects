@@ -20,8 +20,15 @@ export default function Calendar() {
         11: 31
     };
 
-    var actual = meses[new Date().getMonth()]
-    //Cambiar respecto a la lista
+    const [mes, setMes] = useState(new Date().getMonth());
+
+    function nextMonth() {
+        if (mes === 11) {
+            setMes(0);
+        } else {
+            setMes(mes + 1);
+        }
+    }
 
     const [tbody, setTbody] = useState(null);
 
@@ -49,8 +56,8 @@ export default function Calendar() {
         <div className='calendario'>
             <nav>
                 <button>Previous</button>
-                <h2>{actual}</h2>
-                <button>Next</button>
+                <h2>{meses[mes]}</h2>
+                <button onClick={nextMonth}>Next</button>
             </nav>
             <main>
                 <table>
