@@ -30,6 +30,14 @@ export default function Calendar() {
         }
     }
 
+    function backMonth() {
+        if (mes === 0) {
+            setMes(11);
+        } else {
+            setMes(mes - 1);
+        }
+    }
+
     const [tbody, setTbody] = useState(null);
 
     useEffect(() => {
@@ -55,7 +63,7 @@ export default function Calendar() {
     return (
         <div className='calendario'>
             <nav>
-                <button>Previous</button>
+                <button onClick={backMonth}>Previous</button>
                 <h2>{meses[mes]}</h2>
                 <button onClick={nextMonth}>Next</button>
             </nav>
