@@ -7,7 +7,7 @@
 Repositorio realizando proyecto por proyecto utilizando la libreria React, todos los proyectos estan en sus respectivas carpetas
 
 ### Proyectos
-- Lista de Tareas: Crea una aplicación simple para gestionar tareas pendientes.
+- Lista de Tareas: Crea una aplicación simple para gestionar tareas pendientes. 
 - Calendario: Desarrolla un calendario interactivo con eventos y recordatorios.
 - Galería de Imágenes: Construye una galería de imágenes con vistas en miniatura y visualización de imágenes a pantalla completa.
 - Blog Personal: Crea un blog personal con funcionalidad de creación, lectura y edición de publicaciones.
