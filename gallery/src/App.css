@@ -3,10 +3,13 @@
   padding: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 .App {
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
   padding: 1.5em;
 }
 
@@ -21,10 +24,8 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.5s;
-}
-
-.bento-square:hover {
-  width: 20em;
+  margin: 1%;
+  position: relative;
 }
 
 .bento-square img {
