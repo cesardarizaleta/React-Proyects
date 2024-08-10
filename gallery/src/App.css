@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  padding: 1.5em;
+}
+
+.bento-square {
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2), -4px -4px 10px 0 rgba(192, 192, 192, 0.2);
+  width: 15em;
+  height: 15em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.bento-square:hover {
+  width: 20em;
+}
+
+.bento-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+}
