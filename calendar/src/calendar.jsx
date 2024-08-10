@@ -20,48 +20,8 @@ export default function Calendar() {
         11: 31
     };
 
-    const [mes, setMes] = useState(new Date().getMonth());
-
-    function nextMonth() {
-        if (mes === 11) {
-            let body = document.querySelector('tbody')
-            if(body.length === 5){
-              body.remove(body.lastChild);
-            }
-            else {
-              let tr = document.createElement('tr');
-              for (let j = 0; j < 2; j++) {
-                let td = document.createElement('td');
-                td.textContent = 29 + j;
-                tr.appendChild(td);
-                body.appendChild(tr);
-              }
-            }
-            //Regresar a Enero
-            setMes(0);
-        } else {
-            
-            //Cambiar al siguiente mes
-            setMes(mes + 1);
-        }
-    }
-
-    function backMonth() {
-        if (mes === 0) {
-            setMes(11);
-        } else {
-            setMes(mes - 1);
-        }
-    }
-
-    const [tbody, setTbody] = useState(null);
-
-    useEffect(() => {
-      const tbodyElement = document.querySelector('tbody');
-      setTbody(tbodyElement);
-    }, []);
-  
-    useEffect(() => {
+    function createDays() {
+      let tbody = document.querySelector('tbody');
       if (tbody) {
         for (let i = 0; i < 4; i++) {
           let tr = document.createElement('tr');
@@ -81,8 +41,28 @@ export default function Calendar() {
           }
         }
       }
-    }, [tbody]);
+    }
 
+    const [mes, setMes] = useState(new Date().getMonth());
+
+    function nextMonth() {
+        if (mes === 11) {
+            //Regresar a Enero
+            setMes(0);
+        } 
+        else {
+            //Cambiar al siguiente mes
+            setMes(mes + 1)
+        }
+    }
+
+    function backMonth() {
+        if (mes === 0) {
+            setMes(11);
+        } else {
+            setMes(mes - 1);
+        }
+    }
 
     return (
         <div className='calendario'>
@@ -105,7 +85,6 @@ export default function Calendar() {
                         </tr>
                     </thead>
                     <tbody>
-                      
                     </tbody>
                 </table>
             </main>
