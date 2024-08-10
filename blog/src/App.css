@@ -20,6 +20,7 @@ aside button {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    gap: 2em;
 }
 
 header {
@@ -27,4 +28,73 @@ header {
     background-color: #ffffff;
     padding: 1em;
     border-radius: 1em 2em;
+    color: #183FE1;
+    animation: moveit 2s infinite ease-in-out;
+    cursor: pointer;
+}
+
+header h1 {
+    transition: all 0.5s;
+}
+
+
+@keyframes moveit {
+    0% {
+        border-radius: 1em 2em;
+    }
+    50% {
+        border-radius: 2em 1em;
+    }
+    100% {
+        border-radius: 1em 2em;
+    }
+}
+
+.interactive-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;    
+    width: 80%;
+}
+
+main {
+    background-color: #ffffff;
+    min-width: 60%;
+    height: 70vh;
+    padding: 2em;
+    animation: moveit 2s infinite ease-in-out;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    height: 70vh;
+    padding: 2em;
+    animation: moveit 2s infinite ease-in-out;
+}
+
+aside * {
+    width: 100%;
+}
+
+aside input, aside textarea {
+    height: 10%;
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: .5em;
+    border: 2px solid #FF3565;
+    outline: none;
+    transition: all 0.5s;
+}
+
+aside input:focus, aside textarea:focus {
+    border: 2px solid #183FE1
+}
+
+aside textarea {
+    resize: none;
+    height: 30%;
 }

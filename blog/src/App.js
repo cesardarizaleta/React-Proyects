@@ -7,7 +7,7 @@ function App() {
       <header>
         <h1>Personal Blog</h1>
       </header>
-      <div>
+      <div className='interactive-content'>
           <main>
             <h2>Recents Posts</h2>
           </main>
