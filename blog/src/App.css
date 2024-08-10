@@ -71,6 +71,7 @@ aside {
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
+    min-width: 30%;
     height: 70vh;
     padding: 2em;
     animation: moveit 2s infinite ease-in-out;
@@ -96,5 +97,48 @@ aside input:focus, aside textarea:focus {
 
 aside textarea {
     resize: none;
-    height: 30%;
+    height: 40%;
+}
+
+aside button {
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+aside button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0%;
+    z-index: 1;
+    height: 100%;
+    border-radius: .5em;
+    background-color: #183FE1;
+    transition: all 0.5s;
+}
+
+aside button:hover::before {
+    content: '';
+    width: 100%;
+}
+
+aside span {
+    width: fit-content;
+    z-index: 2;
+}
+
+aside svg {
+    z-index: 2;
+    width: 1em;
+    height: 1em;
 }
