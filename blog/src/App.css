@@ -64,6 +64,9 @@ main {
     height: 70vh;
     padding: 2em;
     animation: moveit 2s infinite ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 aside {
@@ -141,4 +144,11 @@ aside svg {
     z-index: 2;
     width: 1em;
     height: 1em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5em;
 }
