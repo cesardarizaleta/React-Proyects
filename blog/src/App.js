@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import './post.css';
 
@@ -20,14 +20,25 @@ function App() {
     post.appendChild(leftside);
     let btns = document.createElement('div');
     btns.classList.add('btns')
-    let like = document.createElement('button');
-    btns.appendChild(like);
     btns.appendChild(document.createElement('button'));
-    like.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="white" fill-rule="evenodd" d="M4.536 5.778a5 5 0 0 1 7.07 0q.275.274.708.682q.432-.408.707-.682a5 5 0 0 1 7.125 7.016L13.02 19.92a1 1 0 0 1-1.414 0L4.48 12.795a5 5 0 0 1 .055-7.017z"/></svg>'
+    btns.querySelector('button').addEventListener('click', Edit);
     post.appendChild(btns)
-    post.querySelectorAll('button')[1].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M3 21v-4.25L16.2 3.575q.3-.275.663-.425t.762-.15t.775.15t.65.45L20.425 5q.3.275.438.65T21 6.4q0 .4-.137.763t-.438.662L7.25 21zM17.6 7.8L19 6.4L17.6 5l-1.4 1.4z"/></svg>'; 
+    post.querySelector('button').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M3 21v-4.25L16.2 3.575q.3-.275.663-.425t.762-.15t.775.15t.65.45L20.425 5q.3.275.438.65T21 6.4q0 .4-.137.763t-.438.662L7.25 21zM17.6 7.8L19 6.4L17.6 5l-1.4 1.4z"/></svg>'; 
     document.querySelector('main ul').appendChild(post);
+
+    document.getElementById('title').value = '';
+    document.getElementById('content').value = '';
   }
+
+
+  function Edit(e) {
+    document.querySelector('aside #title').value = e.target.closest('li').querySelector('h2').innerText;
+    document.querySelector('aside #content').value = e.target.closest('li').querySelector('p').innerText;
+    e.target.closest('li').remove();
+  }
+
+
+
 
   return (
     <div className="App">

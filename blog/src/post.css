@@ -38,13 +38,10 @@ li svg {
 .btns button:first-child svg path {
     fill: white;
     stroke: black;
-    transition: all 0.5s;
     stroke-width: 2;
 }
 
 .btns button:first-child:hover svg path {
     stroke: none;
     fill: #FF356550;
-    width: 2.5em;
-    height: 2.5em;
 }
