@@ -1,4 +1,5 @@
 import React from "react";
+import './gestionar.css';
 
 export default function Gestionar() {
     return (

@@ -33,3 +33,7 @@ nav li:hover {
     padding: .5em 1em;
     border-radius: 1em;
 }
+
+nav li:active {
+    transform: scale(0.95);
+}

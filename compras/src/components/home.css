@@ -1,0 +1,15 @@
+.home-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-global div {
+    text-align: center;
+}
+
+.home-global img {
+    width: 100%;
+    max-width: 300px;
+}
