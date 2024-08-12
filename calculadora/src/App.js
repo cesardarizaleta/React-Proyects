@@ -18,7 +18,13 @@ function App() {
         if(input.value === 'NaN' || input.value === 'Infinity') {
           input.value = '';
         }
-        if(input.value[input.value.length - 1] === '+' || input.value[input.value.length - 1] === '-' || input.value[input.value.length - 1] === '*' || input.value[input.value.length - 1] === '/' || input.value === '') {
+        if(input.value[input.value.length - 1] === '+' || input.value[input.value.length - 1] === '-' || input.value[input.value.length - 1] === '*' || input.value[input.value.length - 1] === '/') {
+          if(btn.textContent === '+' || btn.textContent === '-' || btn.textContent === '*' || btn.textContent === '/') {
+            return
+          }
+        }
+        if(input.value === '+' || input.value === '-' || input.value === '*' || input.value === '/') {
+          input.value = '';
           return
         }
         if(btn.textContent === '=' && input.value !== '') {
