@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect } from 'react';
 import Btn from './components/btn';
 
+
 function App() {
 
 
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <div className="App">
+      
         <div className="calculator">
           <input readOnly></input>
           <div className="btns">
