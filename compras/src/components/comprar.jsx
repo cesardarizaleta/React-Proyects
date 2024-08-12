@@ -1,10 +1,22 @@
 import React from 'react';
+import './comprar.css'
 
 export default function Comprar() {
   return (
-      <div>
-        <h1>Comprar</h1>
-        <p>Esta es la página de compras</p>
+      <div className='compra-global'>
+        <h1>Productos</h1>
+        <div className='content'>
+          <div className='compra-leftside'>
+
+          </div>
+          <div className='compra-rightside'>
+              <h2>Carrito</h2>
+              <ul>
+
+              </ul>
+              <button>Comprar</button>
+          </div>
+        </div>
       </div>
   );
 }

@@ -1,0 +1,59 @@
+.compra-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
+}
+
+.compra-leftside {
+    width:100%;
+    height: 100%;
+}
+
+.compra-rightside {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0px 5px #00000020;
+    padding: 2em;
+    border-radius: 1em;
+    flex-direction: column;
+}
+
+.compra-rightside button {
+    width: 100%;
+    padding: .5em;
+    border: none;
+    border-radius: .5em;
+    background-color: #0441b1;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.compra-rightside button:hover {
+    background-color: #377adf;
+}
+
+.compra-rightside button:active {
+    transform: scale(.95);
+}
+
+.compra-rightside ul{
+    height: 100%;
+    padding: .5em;
+    overflow: auto;
+}
