@@ -11,6 +11,19 @@
     border-radius: 1em;
     transition: all 0.3s;
     flex-wrap: wrap;
+    animation: card 1s infinite;
+}
+
+@keyframes card {
+    0% {
+        color: #f5a113;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: #f5a113;
+    }
 }
 
 
