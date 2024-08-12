@@ -1,0 +1,19 @@
+.card {
+    width: 45%;
+    background-color:#380430 ;
+    color: #f5a113;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1em;
+    transition: all 0.3s;
+    flex-wrap: wrap;
+}
+
+
+#hora {
+    font-size: 2rem;
+}

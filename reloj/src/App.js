@@ -12,8 +12,14 @@ function App() {
         </div>
         <Pais pais="Mexico" />
         <Pais pais="Paris" />
+        <Pais pais="Madrid" />
+        <Pais pais="New York" />
+        <Pais pais="Tokyo" />
+        <Pais pais="Los Angeles" />
+        <Pais pais="Sao Paulo" />
+        <Pais pais="Roma" />
+        <Pais pais="Berlin" />
       </div>
-
     </div>
   );
 }
