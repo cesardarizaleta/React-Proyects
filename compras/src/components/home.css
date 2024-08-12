@@ -12,4 +12,22 @@
 .home-global img {
     width: 100%;
     max-width: 300px;
+    transition: all 0.3s;
+    animation: jump 2s infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-global img:hover {
+    filter: drop-shadow(0 0 10px #00000050);
 }
