@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Pais from './components/pais'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='leftside'>
+        <div className='card'>
+          <h1>Reloj</h1>
+          <h3 id='subtitle'>Diferentes ciudades</h3>
+        </div>
+        <Pais pais="Mexico" />
+        <Pais pais="Paris" />
+      </div>
+
     </div>
   );
 }
