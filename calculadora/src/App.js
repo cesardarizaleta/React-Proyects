@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
         <div className="calculator">
-          <input></input>
+          <input type="text" readOnly></input>
           <div className="btns">
             <Btn number="1"/>
             <Btn number="2"/>
