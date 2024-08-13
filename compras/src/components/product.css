@@ -1,0 +1,23 @@
+.product {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0px 5px #00000020;
+    min-height: 10em;
+    padding: 1em ;
+}
+
+.product button {
+    width: 100%;
+    padding: .5em;
+    border: none;
+    border-radius: .5em;
+    background-color: #0441b1;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}

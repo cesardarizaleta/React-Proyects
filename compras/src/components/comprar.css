@@ -13,12 +13,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-    gap: 1em;
+    gap: 2em;
 }
 
 .compra-leftside {
     width:100%;
     height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    overflow: auto;
+    padding: 1em;
 }
 
 .compra-rightside {
