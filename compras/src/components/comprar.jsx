@@ -34,6 +34,7 @@ export default function Comprar() {
     setTimeout(() => {
       document.querySelector('.verification').style.bottom = '-20%';
     }, 3000);
+    document.querySelector('.compra-rightside ul').innerHTML = '';
   }
 
   return (
