@@ -48,6 +48,10 @@ export default function Comprar() {
               </ul>
               <button>Comprar</button>
           </div>
+          <div className='verification'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#87c655" d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4z"/></svg>
+              <h3>Su Compra ha sido realizada con exito</h3>
+          </div>
         </div>
       </div>
   );
