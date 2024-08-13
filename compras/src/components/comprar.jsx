@@ -25,6 +25,17 @@ export default function Comprar() {
     }
   })
 
+  function confirm() {
+    if(document.querySelector('.compra-rightside ul').innerHTML === '') {
+      alert('No hay productos en el carrito');
+      return;
+    }
+    document.querySelector('.verification').style.bottom = '5%';
+    setTimeout(() => {
+      document.querySelector('.verification').style.bottom = '-20%';
+    }, 3000);
+  }
+
   return (
       <div className='compra-global'>
         <h1>Productos</h1>
@@ -46,7 +57,7 @@ export default function Comprar() {
               <ul>
 
               </ul>
-              <button>Comprar</button>
+              <button onClick={confirm}>Comprar</button>
           </div>
           <div className='verification'>
               <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#87c655" d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4z"/></svg>

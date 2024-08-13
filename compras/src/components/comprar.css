@@ -76,4 +76,5 @@
     gap: 1em;
     background-color: #c9e9ad70;
     border-radius: 1em;
+    transition: all .5s;
 }
