@@ -1,12 +1,24 @@
 import React from 'react';
+import './App.css';
+
+//Amarillo: rgb(255, 250, 114)
+//Azul-Morado: rgb(46, 5, 105)
 
 const App = () => {
   return (
-    <div className="h-screen bg-orange-500 p-8 flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold text-white">¡Hola Tailwind CSS!</h1>
-      <p className="mt-4 text-white">
-        Tailwind CSS es increíblemente poderoso. ¡No puedo esperar para seguir explorándolo!
-      </p>
+    <div id='App' className="h-screen">
+      <div className='w-1/4 h-full p-7 flex flex-col gap-4'>
+        <h1 className='text-3xl font-bold'>Music</h1>
+        <div>
+          <div id='searchbar' className='flex justify-between'>
+            <input className='bg-transparent outline-none' placeholder='Search song'></input>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/></svg></button>
+          </div>
+        </div>  
+      </div>
+      <div className=''>
+
+      </div>
     </div>
   );
 }
