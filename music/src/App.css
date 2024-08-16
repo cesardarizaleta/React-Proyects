@@ -16,8 +16,17 @@
     border: 1px solid #ccc;
     border-radius: 2em;
     transition: all .3s;
+    cursor:text;
 }
 
 #searchbar:hover {
     border: 1px solid rgb(46, 5, 105);
+}
+
+#file {
+    width: 100%;
+    border: none;
+    padding: .5em 1em;
+    border-radius: 2em;
+    background-color: rgb(46, 5, 105);
 }
