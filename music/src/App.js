@@ -7,6 +7,8 @@ import File from './components/file.jsx';
 
 const App = () => {
 
+  //
+
   return (
     <div id='App' className="h-screen w-full">
       <div id='content' className='w-1/4 h-full p-7 flex flex-col gap-4'>
