@@ -20,11 +20,9 @@ const App = () => {
           </div>
           <File />
         </div>
-        <ul className='h-1/2 p-4'>
-        </ul> 
         <div>
           <h2 className='text-xl font-semibold'>Current Song</h2>
-          <audio className='w-full' controls></audio>
+          <audio className='w-52' controls></audio>
         </div> 
       </div>
     </div>

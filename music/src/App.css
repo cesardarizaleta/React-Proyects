@@ -6,6 +6,17 @@
     overflow: hidden;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    gap: 2em;
+    background-color: #ffffff30;
+}
+
 * {
     color:rgb(46, 5, 105);
     font-family: 'Quicksand';
@@ -20,17 +31,15 @@
     cursor:text;
 }
 
+#searchbar input::placeholder {
+    color: #fff;
+}
+
 #searchbar:hover {
     border: 1px solid rgb(46, 5, 105);
 }
 
-#file {
-    width: 100%;
-    border: none;
-    padding: .5em 1em;
-    border-radius: 2em;
-    background-color: rgb(46, 5, 105);
-}
+
 
 input[type="file"] {
     display: none;
@@ -52,10 +61,6 @@ input[type="file"] {
 
     #searchbar input {
         text-align: end;
-    }
-
-    ul {
-        display: none;
     }
 
 
