@@ -19,7 +19,6 @@ const App = () => {
       document.getElementById("login-content").style.left = "0";
     })
 
-
   }, []);
 
 
