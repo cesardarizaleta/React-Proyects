@@ -8,9 +8,18 @@ const App = () => {
 
   useEffect(() => {
     document.title = "Authenticator";
-    document.querySelector('#login-content button:last-child').addEventListener('click', () => {
-      alert('Register button clicked');
+
+    document.getElementById("btn-change-log").addEventListener("click", () => {
+      document.getElementById("register-content").style.right = "0";
+      document.getElementById("login-content").style.left = "-50%";
     })
+
+    document.getElementById("btn-change-reg").addEventListener("click", () => {
+      document.getElementById("register-content").style.right = "-50%";
+      document.getElementById("login-content").style.left = "0";
+    })
+
+
   }, []);
 
 
