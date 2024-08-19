@@ -7,7 +7,7 @@ import Main from './components/main';
 const App = () => {
   return (
     <div className="h-screen">
-        <Opulento />
+        <Opulento className="blur-md" />
         <Main />
     </div>
   );
