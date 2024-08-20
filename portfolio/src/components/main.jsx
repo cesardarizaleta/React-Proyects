@@ -29,7 +29,25 @@ export default function Main(){
                     <div className="w-44 transition-all duration-700 hover:scale-90 bg-white h-28 rounded-md cursor-pointer"></div>
                 </div>
                 <h2 className="text-white text-2xl font-bold">Experience</h2>
+                <div>
+                    <ul className="flex text-center gap-2 text-white">
+                        <li className="flex-1 p-3 rounded-md transition-all duration-500 cursor-pointer hover:bg-white hover:text-black">Lorem</li>
+                        <li className="flex-1 p-3 rounded-md transition-all duration-500 cursor-pointer hover:bg-white hover:text-black">Lorem</li>
+                        <li className="flex-1 p-3 rounded-md transition-all duration-500 cursor-pointer hover:bg-white hover:text-black">Lorem</li>
+                        <li className="flex-1 p-3 rounded-md transition-all duration-500 cursor-pointer hover:bg-white hover:text-black">Lorem</li>
+                        <li className="flex-1 p-3 rounded-md transition-all duration-500 cursor-pointer hover:bg-white hover:text-black">Lorem</li>
+                    </ul>
+                </div>
                 <h2 className="text-white text-2xl font-bold">Education</h2>
+                <div>
+                    <div className="w-full items-center justify-around h-4 flex bg-white rounded-full border-none transition-all duration-700 hover:h-6 cursor-pointer">
+                        <div className="bg-blue-400 w-3 h-3 rounded-full transition-all duration-500 hover:w-10"></div>
+                        <div className="bg-blue-400 w-3 h-3 rounded-full transition-all duration-500 hover:w-10"></div>
+                        <div className="bg-blue-400 w-3 h-3 rounded-full transition-all duration-500 hover:w-10"></div>
+                        <div className="bg-blue-400 w-3 h-3 rounded-full transition-all duration-500 hover:w-10"></div>
+                        <div className="bg-blue-400 w-3 h-3 rounded-full transition-all duration-500 hover:w-10"></div>
+                    </div>
+                </div>
                 <h2 className="text-white text-2xl font-bold">Contact</h2>
             </div>
           
