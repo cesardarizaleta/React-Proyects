@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import DefaultPhoto from '../resources/profile_default.webp'
 
 export default function ProfilePhoto({URL}){
 
@@ -10,7 +11,7 @@ export default function ProfilePhoto({URL}){
             return
         }
 
-        document.querySelector('#profile-photo img').src = 'https://avatars.githubusercontent.com/u/77490521?v=4'
+        document.querySelector('#profile-photo img').src = DefaultPhoto
     },[])
 
     return (
