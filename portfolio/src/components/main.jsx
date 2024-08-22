@@ -4,17 +4,16 @@ import './main.css'
 import ReactPhoto from '../resources/devicon--react.png'
 import TwlPhoto from '../resources/devicon--tailwindcss.png'
 import { MdOutlineEmail } from "react-icons/md";
+import { IoIosCall } from "react-icons/io";
 
 export default function Main(){
     return (
         <div id='content' className='absolute gap-6 top-0 left-0 h-screen w-screen flex justify-center items-center flex-wrap'>
-
             <div id="personal-data" className="w-80 h-3/4 p-10 flex flex-col gap-4 rounded-lg">
                 <ProfilePhoto URL={''} />
                 <h1 className="text-white text-center font-bold text-xl">Name</h1>
                 <h2 className="text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas nisi illum voluptatem suscipit maiores dolor, impedit nemo aliquam, molestias mollitia sed voluptatum debitis, nostrum fugit earum animi incidunt accusantium!</h2>
             </div>
-
             <div id="knowledge" className="w-3/5 h-3/4 p-10 flex flex-col gap-4 rounded-lg overflow-auto">
                 <h2 className="text-white text-2xl font-bold">Technologies</h2>
                 <div className="flex gap-4">
@@ -50,7 +49,8 @@ export default function Main(){
                     </div>
                 </div>
                 <h2 className="text-white text-2xl font-bold">Contact</h2>
-                <div><MdOutlineEmail className="w-8 h-8" color="white" /></div>
+                <div className="flex items-center gap-5 justify-center cursor-pointer transition-all hover:gap-7 text-white"><MdOutlineEmail className="w-8 h-8" color="white" />
+                lorem@gmail.com<IoIosCall className="w-8 h-8" />04142841098</div>
             </div>
           
         </div>
