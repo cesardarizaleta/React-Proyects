@@ -3,6 +3,7 @@ import ProfilePhoto from "./profile-photo";
 import './main.css'
 import ReactPhoto from '../resources/devicon--react.png'
 import TwlPhoto from '../resources/devicon--tailwindcss.png'
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function Main(){
     return (
@@ -49,6 +50,7 @@ export default function Main(){
                     </div>
                 </div>
                 <h2 className="text-white text-2xl font-bold">Contact</h2>
+                <div><MdOutlineEmail className="w-8 h-8" color="white" /></div>
             </div>
           
         </div>
