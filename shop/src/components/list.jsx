@@ -12,7 +12,7 @@ export default function List() {
                 <IoCaretBack className="rotate-90 w-6 h-6" />
                 </button>
             </div>
-            <div id="lista-product" className="gap-4">
+            <div id="lista-product" className="gap-4 overflow-auto">
                 <Product />
                 <Product />
                 <Product />
