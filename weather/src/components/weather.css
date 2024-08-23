@@ -1,0 +1,8 @@
+main {
+    backdrop-filter: blur(10px);    
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 10px 0px inset;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
