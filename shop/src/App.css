@@ -1,3 +1,26 @@
 #marco {
     border: 2em solid black;
 }
+
+#btn-gobuy {
+    border: 1em solid black;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+#btn-gobuy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: all 0.5s;
+}
+
+#btn-gobuy:hover::before {
+    width: 100%;
+}
+
