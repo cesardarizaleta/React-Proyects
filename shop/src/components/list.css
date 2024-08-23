@@ -2,3 +2,8 @@
     transition: all 0.5s;
     transform: translateY(-0.2em) rotate(90deg);
 }
+
+#lista-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+}
