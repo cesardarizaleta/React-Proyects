@@ -2,8 +2,22 @@ import './App.css';
 
 function App() {
 
-  function verify() {
-    alert('hi')
+  function verify(e) {
+    let barra = document.getElementById('barra')
+
+    let total = e.target.value.length
+
+    barra.style.width = total + 'em'
+
+    if(e.target.value.includes('$') || e.target.value.includes('.') ||
+    e.target.value.includes('#') || e.target.value.includes('@') ||
+    e.target.value.includes('*') || e.target.value.includes('&') ||
+    e.target.value.includes('%')){
+      barra.style.backgroundColor = 'red'
+    }
+    else {
+      barra.style.backgroundColor = 'blue'
+    }
   }
 
   return (
@@ -18,11 +32,16 @@ function App() {
         text-center outline-none" placeholder="Enter your Password" id="pass"></input>
       </main>
 
-      <div id="progress" className="w-72 h-8 hover:w-80 transition-all duration-700
-       text-white rounded-md overflow-hidden relative shadow-xl
+      <button className="w-72 h-8 transition-all duration-700
+       bg-transparent rounded-full bg-opacity-80 text-white
+      ">Generate</button>
+
+      <div id="progress" className="w-72 h-6 hover:w-80 transition-all duration-700
+       text-white rounded-full overflow-hidden relative shadow-xl
       ">
         <div id="barra"
-        className="absolute left-0 h-full opacity-50 w-6 bg-blue-200">
+        className="absolute left-0 h-full
+        transition-all opacity-50 duration-700 w-0 rounded-full">
 
         </div>
       </div>
