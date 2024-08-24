@@ -35,6 +35,11 @@ function App() {
 
     input.value = password
 
+    let barra = document.getElementById('barra')
+    barra.style.width = input.value.length + 'em'
+    barra.style.backgroundColor = 'red'
+
+
     navigator.clipboard.writeText(password)
 
   }
