@@ -35,6 +35,7 @@ function App() {
 
     input.value = password
 
+    navigator.clipboard.writeText(password)
 
   }
 
