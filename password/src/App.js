@@ -20,6 +20,24 @@ function App() {
     }
   }
 
+  function make() {
+    let input = document.querySelector('input')
+    let hard = ['@','#','$','%','&','*']
+
+
+    let password = ''
+    for (let i = 0; i < 5; i++) {
+
+      password += Math.random().toString(36).substring(2,3)
+      password += hard[Math.floor(Math.random()*(hard.length))]
+      password += parseInt(Math.random() * 100)
+    }
+
+    input.value = password
+
+
+  }
+
   return (
     <div id="App" className="h-screen w-screen flex flex-col justify-center items-center
     gap-2">
@@ -34,7 +52,7 @@ function App() {
 
       <button className="w-72 h-8 transition-all duration-700
        bg-transparent rounded-full bg-opacity-80 text-white
-      ">Generate</button>
+      " onClick={make}>Generate</button>
 
       <div id="progress" className="w-72 h-6 hover:w-80 transition-all duration-700
        text-white rounded-full overflow-hidden relative shadow-xl
