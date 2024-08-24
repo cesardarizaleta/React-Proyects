@@ -2,6 +2,8 @@ import './App.css';
 
 function App() {
 
+  //
+
   function verify(e) {
     let barra = document.getElementById('barra')
 
