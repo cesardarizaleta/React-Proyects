@@ -4,7 +4,7 @@
     background-size: cover;
 }
 
-main {
+main, #progress {
     border: 2px solid #ffffff10;
     backdrop-filter: blur(10px);
 }
