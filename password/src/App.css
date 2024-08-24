@@ -1,0 +1,10 @@
+#App {
+    background: url('resources/dddepth-315.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    border: 2px solid #ffffff10;
+    backdrop-filter: blur(10px);
+}
