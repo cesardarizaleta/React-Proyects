@@ -23,15 +23,10 @@ Repositorio realizando proyecto por proyecto utilizando la libreria React, todos
 - Tienda en Línea: Construye una tienda en línea con catálogo de productos y carrito de compras.
 - Lista de Reproducción de Videos: Desarrolla una lista de reproducción de videos con funcionalidades de reproducción y pausa.
 - Widget del Clima: Utiliza una API de pronóstico del clima para mostrar información meteorológica actual.
-- Juego de Memoria: Crea un juego de memoria en el que los usuarios deben hacer coincidir pares de tarjetas.
-- Encuesta en Línea: Diseña una encuesta interactiva con preguntas y respuestas.
 - Generador de Contraseñas: Desarrolla una herramienta que genere contraseñas seguras.
-- Aplicación de Noticias: Construye una aplicación que muestre noticias de fuentes RSS o una API de noticias.
 - Herramienta de Dibujo: Crea una herramienta de dibujo en línea que permita a los usuarios crear arte digital.
 - Contador de Palabras: Implementa un contador de palabras que analice y muestre estadísticas de un texto ingresado.
-- Blog de Viajes: Desarrolla un blog de viajes con fotos, descripciones y ubicaciones de destinos.
 - Juego de Ahorcado: Crea el clásico juego de adivinar palabras.
-- Aplicación de Recordatorios: Diseña una aplicación que permita a los usuarios configurar y recibir recordatorios.
 
 ## EN
 Repository organizing projects individually using the React library. All projects are in their respective folders.
@@ -53,13 +48,7 @@ Repository organizing projects individually using the React library. All project
 - Online Store: Build an online store with a product catalog and shopping cart.
 - Video Playlist: Develop a video playlist with play and pause functionalities.
 - Weather Widget: Use a weather forecast API to display current weather information.
-- Memory Game: Create a memory game where users must match pairs of cards.
-- Online Survey: Design an interactive survey with questions and answers.
 - Password Generator: Develop a tool that generates strong passwords.
-- News Application: Build an application that displays news from RSS feeds or a news API.
 - Drawing Tool: Create an online drawing tool that allows users to create digital art.
 - Word Counter: Implement a word counter that analyzes and displays statistics of an entered text.
-- Travel Blog: Develop a travel blog with photos, descriptions, and locations of destinations.
 - Hangman Game: Create the classic word guessing game.
-- Reminder App: Design an application that allows users to set and receive reminders.
-- Note: This translation aims to provide a clear and concise representation of the original Spanish text. The choice of words and sentence structure in the English translation may vary slightly to better convey the intended meaning.
