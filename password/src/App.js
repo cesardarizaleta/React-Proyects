@@ -4,9 +4,12 @@ function App() {
   return (
     <div id="App" className="h-screen w-screen grid place-items-center">
 
-      <main className="w-72 h-96 rounded-xl shadow-xl">
-        <label for="pass">Password</label>
-        <input id="pass"></input>
+      <main className="w-72 h-fit hover:w-80 transition-all duration-700
+       text-white rounded-xl shadow-xl
+      ">
+        <input className="w-full rounded-md p-5
+        cursor-pointer bg-transparent placeholder:text-white
+         outline-none" placeholder="Enter your Password" id="pass"></input>
       </main>
 
     </div>
