@@ -1,0 +1,11 @@
+#App {
+  background-image: url('resources/ttten.svg');
+}
+
+#count {
+  background-color: hsl(230, 55%, 40%);
+}
+
+#count span p {
+  font-size: 8em;
+}
