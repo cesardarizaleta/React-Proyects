@@ -4,5 +4,13 @@
 }
 
 .control-item:hover {
-    
+    transform: scale(1.2);
+}
+
+.control-item:active {
+    transform: scale(1);
+}
+
+.active  {
+    fill:#59a7ff ;
 }
