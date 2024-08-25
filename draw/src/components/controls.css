@@ -2,3 +2,7 @@
     backdrop-filter: blur(2px);
     border: 1px solid #00000020;
 }
+
+.control-item:hover {
+    
+}
