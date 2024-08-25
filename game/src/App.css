@@ -4,3 +4,39 @@
 #App div input {
     border-bottom: 2px solid #2C1778;
 }
+
+#head {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#body {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#leg-1 {
+    top: 70%;
+    left: 35%;
+    transform: translateX(-50%) rotateZ(45deg);
+}
+
+#leg-2 {
+    top: 70%;
+    left: 65%;
+    transform: translateX(-50%) rotateZ(-45deg);
+}
+
+#arm-1 {
+    top: 40%;
+    left: 35%;
+    transform: translateX(-50%) rotateZ(45deg);
+}
+
+#arm-2 {
+    top: 40%;
+    left: 65%;
+    transform: translateX(-50%) rotateZ(-45deg);
+}
