@@ -21,7 +21,7 @@ function App() {
     <div id="App" className="h-screen w-screen bg-cover bg-center flex
     justify-center items-center gap-4" >
       <Text />
-      <div id='count' className='w-52 h-2/5 rounded-lg flex flex-col justify-center items-center'>
+      <div id='count' className='w-fit p-2 h-2/5 rounded-lg flex flex-col justify-center items-center'>
         <span><p className='text-white text-center font-bold'>{words}</p></span>
         <p className='text-white text-center font-bold text-4xl'>Words</p>
 
